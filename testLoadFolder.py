@@ -1,20 +1,19 @@
 """
 Cargando imagenes desde una carpeta y convirtiendo a escala de grises,
-se almacenan las imagenes de 176x144=25344px en un vector.
+se almacenan las imagenes de 72x88=6336px en un vector.
 Se realiza el mismo procedimiento para las 21 letras, se concatenan
-y al final se obtiene una matriz de 10500x25344
+y al final se obtiene una matriz de 10500x6336
 @author: estevez
 """
 import numpy as np
 from PIL import Image
 import glob
 
-#abecedario = ['A']
 abecedario = ['A','B','C','D','E','F','G','H','I','L','M','N','O','P','R','S','T','U','V','W','Y']
-#data = np.zeros(shape=(1,25344))
 data = np.arange(6336)
 data = np.reshape(data,(1,6336))
 for j in abecedario:
+    
     #Almacenando las imagenes en una lista
     image_list = []
     for filename in glob.glob('/home/estevez/Documentos/Programas Python/dataTesis/{}/*.jpg'.format(j)): 
