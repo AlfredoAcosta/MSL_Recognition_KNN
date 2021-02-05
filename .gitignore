@@ -2,3 +2,4 @@ dataLSM.csv
 datosLSM.csv
 LSM_reduced.csv
 .ipynb_checkpoints/
+testLoadFolder.py
