@@ -46,6 +46,7 @@ accuracy_models = []
 # Evaluating new train and test set to obtain the best value for K
 # this evaluation consist of train and test the KNN algorithm with
 # odd values in range [1,39].
+print('Evaluando exactitud de KNN con K de [1,39]: ')
 for i in range(1,40,2):
     knn = KNeighborsClassifier(n_neighbors=i)
     knn.fit(new_train, new_y_train)
@@ -56,7 +57,7 @@ for i in range(1,40,2):
 
 # Let's plot this accuracy vector
 kvalues=np.arange(1,40,2)
-plt.plot(kvalues,accuracy_models[:20],'r+')    
+plt.plot(kvalues,accuracy_models,'r+')    
 plt.xlabel('k values')    
 plt.ylabel('accuracy')
 plt.title("Accuracy of KNN with validation set")
@@ -71,6 +72,7 @@ plt.show()
 # the originals train and test set wich cointains all dataset.
 # The test set now it's the unseen data.
 
+print('Evaluando exactitud de KNN con K = 3 ')
 start = time.time()
 knn = KNeighborsClassifier(3) 
 knn.fit(X_train, y_train)   
@@ -87,13 +89,16 @@ print(classification_report(y_test, y_pred, target_names=labels))
 
 y_test=y_test.reshape((2100))
 from sklearn.metrics import precision_score
-precision_score(y_test, y_pred, average='weighted')
+prec=precision_score(y_test, y_pred, average='weighted')
+print('Precision: {}'.format(prec))
 
 from sklearn.metrics import recall_score
-recall_score(y_test, y_pred, average='weighted')
+rec=recall_score(y_test, y_pred, average='weighted')
+print('Sensibilidad: {}'.format(rec))
 
 from sklearn.metrics import f1_score
-f1_score(y_test, y_pred, average='weighted')
+f1=f1_score(y_test, y_pred, average='weighted')
+print('f1-score: {}'.format(f1))
 
 
     

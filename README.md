@@ -2,21 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-
-  <h3 align="center">K </h3>
-
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
-  </p>
+  <h3 align="center">Mexican Sing Language Recognition Using K-Nearest-Neighbords </h3>
 </p>
 
 
@@ -52,11 +38,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+This project is about Sign Recognition using an Instance Based Modelling Algorithm, in this case: 'K-nearest-neighbords', the selection of the best K is obtained analyzing the accuracy behavior with a proposed validation set. K-Nearest-Neighbords(KNN) it's a simple but powerful algorithm that can deal with image recognition as shown.
 
 
 ### Built With
