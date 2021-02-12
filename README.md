@@ -43,10 +43,10 @@ This project is about Sign Recognition using an Instance Based Modelling Algorit
 
 ### Built With
 
-* []()
-* []()
-* []()
-
+* [Numpy](https://numpy.org/)
+* [Pandas](https://pandas.pydata.org/)
+* [matplotlib](https://matplotlib.org/stable/index.html)
+* [scikit-learn](https://scikit-learn.org/stable/)
 
 
 <!-- GETTING STARTED -->
