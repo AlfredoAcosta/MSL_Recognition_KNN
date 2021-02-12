@@ -77,7 +77,7 @@ There are proposed differents metrics of evaluation that are shown in the next t
 
 <!-- CONTRIBUTING -->
 ## Contributing
-I'll aprecciate if you have some comments or contributions to this project.
+I'll appreciate if you have some comments or contributions to this project.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b myBranch`)
